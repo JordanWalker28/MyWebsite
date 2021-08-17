@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timeline.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -26,76 +27,112 @@
     </nav>
     </header>
 
-    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-        <h3 style="text-align:center;">About Me</h3>
-        <p>Hands-on, experienced Back-End Software Developer with a First Class Honours Degree in Computer Science with specialisation in Artificial Intelligence who has a keen interest in evolving technology and ambition to continuously develop. </p>
-      </div>
-      
+
       <div class="bgimg-2">
         <div class="caption">
           <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
         </div>
       </div>
       
-      <div style="position:relative;">
-        <ul class="timeline">
-
-          <!-- Item 1 -->
-          <li>
-            <div class="direction-r">
-              <div class="flag-wrapper">
-                <span class="flag">Lab Technician</span>
-                <span class="time-wrapper"><span class="time">Sept 2018 - June 2019</span></span>
-              </div>
-              <div class="desc">Worked with first and second-year Computer Science students within their classes' dedicated lab times.
-                This included the following courses:
-                -Web Design and Databases
-                (Helped students with HTML5, CSS, JavaScript, MySQL)
-                -Software Development 2
-                (Supported with Java)
-                -Praxis
-                (Helped students with Report Writing, Linux Commands, Bash Scripts)
-                -Web Programming
-                (Helped students with PHP, MySQL, JavaScript, Node.js, JSPs)
-              </div>
-            </div>
-          </li>
-          
-          <!-- Item 2 -->
-          <li>
-            <div class="direction-l">
-              <div class="flag-wrapper">
-                <span class="flag">InsightSoftware</span>
-                <span class="time-wrapper"><span class="time">Sept 2021 - Feb 2021</span></span>
-              </div>
-              <div class="desc">As a Back-End Developer within Insightsoftware, my focus is on continuously improving and developing the company's custom integration ERP software "Hubble".
-                https://insightsoftware.com/hubble
-                
-                Responsibilities include:
-                - Developing new code and maintaining the existing code base
-                - Identifying bugs and producing efficient fixes
-                - Creating unit tests as well as running self-developed and automated integration tests through a Jenkins pipeline
-                - Resolve tickets raised by clients and the customer service team
-                - Actively involved in sprint planning and setting goals (Scrum environment)
-                - Thoroughly assess the pre-released product by testing manually and running automated regression tests
-                - Continuously develop our code pipeline through Jenkins</div>
-            </div>
-          </li>
-        
-          <!-- Item 3 -->
-          <li>
-            <div class="direction-r">
-              <div class="flag-wrapper">
-                <span class="flag">TradingHub</span>
-                <span class="time-wrapper"><span class="time">Feb 2021 - Present</span></span>
-              </div>
-              <div class="desc">Software Engineer, primarily focussed on developing the Front End application for TEAM.</div>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
+      <div class="timeline-container">
+        <h1 class="project-name">Responive Animated Timeline</h1> 
+        <div id="timeline">
       
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </div>
+              <div class="timeline-content">
+                <h2>The email was sent to the user</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
+                </p>
+                <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+              </div>
+            </div>
+      
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+              </div>
+              <div class="timeline-content right">
+                <h2>The email was delivered to the user</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur.
+                </p>
+                <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+              </div>
+            </div>
+      
+            <div class="timeline-item">
+              <div class="timeline-icon success">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="timeline-content">
+                <h2>Quick Trial generation finished</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+                </p>
+                 <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+              </div>
+            </div>
+      
+             <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+              </div>
+              <div class="timeline-content right">
+                <h2>Marketo Syncronization</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+                </p>
+                 <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+              </div>
+            </div>
+      
+          <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              </div>
+              <div class="timeline-content">
+                <h2>Application Licenses</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+                </p>
+                 <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+              </div>
+        </div>
+      
+             <div class="timeline-item right">
+              <div class="timeline-icon">
+                <i class="fa fa-key" aria-hidden="true"></i>
+              </div>
+              <div class="timeline-content right">
+                <h2>Application Download Key</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+                </p>
+                 <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+              </div>
+            </div>
+      
+              <div class="timeline-item">
+              <div class="timeline-icon success">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="timeline-content">
+                <h2>Quick Trial Generation Started</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+                </p>
+                 <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+              </div>
+            </div>
+      
+        </div>
+        </div>
+
       <div class="bgimg-3">
         <section id="contact">
   
@@ -178,6 +215,7 @@
             
           </section>  
       </div>
-
+      <script src='text/javascript'></script><script  src="js/timeline.js"></script>
   </body>
+
 </html>
