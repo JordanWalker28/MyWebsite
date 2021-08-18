@@ -104,7 +104,6 @@ a.active,a:hover{
   
   /* Begin Left Contact Page */
   .form-horizontal {
-    float: left;
     max-width: 400px;
     font-family: 'Lato';
     font-weight: 400;
@@ -371,7 +370,6 @@ a.active,a:hover{
   }
 
   
-
 @media (max-width: 952px){
   label.logo{
     font-size: 30px;
