@@ -99,7 +99,7 @@ a.active,a:hover{
     margin: 0 auto;
     padding-top: 20px;
     position: relative;
-    max-width: 800px;
+    max-width: 900px;
   }
   
   /* Begin Left Contact Page */
@@ -236,12 +236,7 @@ a.active,a:hover{
   .social-media-list li:hover {
     background-color: purple; 
   }
-  
-  .social-media-list li:hover:after {
-    opacity: 1;  
-    transform: scale(1.12);
-    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-  }
+
   
   .social-media-list li:hover a {
     color: #111;
