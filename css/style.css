@@ -23,6 +23,14 @@ body {
 	color:#777;
 	background:#0CF;
 }
+
+header {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
 nav{
   background: #0082e6;
   height: 80px;
