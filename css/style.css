@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+:root{
+  --HeaderFooterBackground: #1d1f1d;
+  --BackgroundColour: #353836;
+  --EdgeAndButtonColour: #eb2f06;
+  --White: white;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,8 +14,8 @@
 }
 
 body {
-  background-color: #353836;
-  color: white;
+  background-color: var(--BackgroundColour);
+  color: var(--White);
   font-family: "Poppins", sans-serif;
 }
 
@@ -18,7 +25,7 @@ header a {
 
 header {
   padding: 0 20px;
-  background-color: #1d1f1d;
+  background-color: var(--HeaderFooterBackground);
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -35,7 +42,7 @@ header {
 }
 
 #brand a {
-  color: #09c372;
+  color: var(--EdgeAndButtonColour);
 }
 
 ul {
@@ -47,7 +54,7 @@ ul {
 }
 
 ul a {
-  color: white;
+  color: var(--White);
 }
 
 ul li {
@@ -69,7 +76,7 @@ ul li:hover {
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background-color: white;
+  background-color: var(--White);;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -113,7 +120,7 @@ footer{
   position: fixed;
   bottom: 0;
   left: 0;
-  background: #111;
+  background: var(--HeaderFooterBackground);;
 }
 footer .content{
   max-width: 1350px;
@@ -124,7 +131,7 @@ footer .content{
   justify-content: space-between;
 }
 footer .content p,a{
-  color: #fff;
+  color: var(--White);;
 }
 footer .content .box{
   width: 33%;
@@ -133,7 +140,7 @@ footer .content .box{
 footer .content .topic{
   font-size: 22px;
   font-weight: 600;
-  color: #fff;
+  color:var(--White);
   margin-bottom: 16px;
 
 }
@@ -146,9 +153,7 @@ footer .content .lower .topic{
 footer .content .lower i{
   padding-right: 16px;
 }
-footer .content .middle a{
-  line-height: 32px;
-}
+
 footer .content .right input[type="text"]{
   height: 45px;
   width: 100%;
@@ -165,31 +170,36 @@ footer .content .right input[type="submit"]{
   width: 100%;
   font-size: 18px;
   color: #d9d9d9;
-  background: #eb2f06;
+  background: var(--EdgeAndButtonColour);
   outline: none;
   border-radius: 5px;
   letter-spacing: 1px;
   cursor: pointer;
   margin-top: 12px;
-  border: 2px solid #eb2f06;
+  border: 2px solid var(--EdgeAndButtonColour);
   transition: all 0.3s ease-in-out;
 }
 .content .right input[type="submit"]:hover{
   background: none;
-  color:  #eb2f06;
+  color: var(--EdgeAndButtonColour);;
 }
 footer .content .media-icons a{
   font-size: 16px;
-  height: 45px;
-  width: 45px;
+  height: 3em;
+  width: 3em;
   display: inline-block;
   text-align: center;
   line-height: 43px;
   border-radius: 5px;
-  border: 2px solid #222222;
+  border: 2px solid var(--EdgeAndButtonColour);
   margin: 30px 5px 0 0;
   transition: all 0.3s ease;
 }
+
+.media-icons{
+  text-align: center;
+}
+
 .content .media-icons a:hover{
   border-color: #eb2f06;
 }
@@ -200,18 +210,13 @@ footer .bottom{
   padding: 0 40px 5px 0;
 }
 footer .bottom a{
-  color: #eb2f06;
+  color: var(--EdgeAndButtonColour);
 }
 footer a{
   transition: all 0.3s ease;
 }
 footer a:hover{
-  color: #eb2f06;
-}
-@media (max-width:1100px) {
-  footer .content .middle{
-    padding-left: 50px;
-  }
+  color: var(--EdgeAndButtonColour);
 }
 @media (max-width:950px){
   footer .content .box{
