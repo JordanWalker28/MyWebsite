@@ -16,7 +16,7 @@
 body {
   background-color: var(--BackgroundColour);
   color: var(--White);
-  font-family: "Poppins", sans-serif;
+  font: 1.3rem Inconsolata, monospace;
 }
 
 header a {
