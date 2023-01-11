@@ -135,21 +135,7 @@ ul li:hover {
   text-align: center;
 }
 
-.buffer {
-  width: 100%;
-  min-height: 60vh;
-  background-color: var(--color);
-}
-
-.parallax-container2 {
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 6rem 0;
-  background-image: url(https://images.unsplash.com/photo-1585424536945-26663ea69d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80);
-  gap: 1.6em;
-}
-
-.parallax-container h1 {
+.parallax-container h1{
   font-size: 3rem;
   font-weight: 700;
   color: black;
@@ -159,6 +145,17 @@ ul li:hover {
   color: black;
 }
 
+.buffer {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--color);
+}
+
+.parallax-container2 {
+  padding: 6rem 0;
+  background-image: url(https://images.unsplash.com/photo-1585424536945-26663ea69d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80);
+}
+
 .parallax-container h3 {
   margin-top: 1em;
   font-size: 1.6rem;
@@ -166,41 +163,141 @@ ul li:hover {
   color: black;
 }
 
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.band {
+    height: auto;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-top: none;
+    border-bottom: none;
+}
+
+.band h1 {
+    margin-top: 10%;
+    font-size: 3rem;
+    color: #000000;
+    font-weight: 100;
+    letter-spacing: 0.25px;
+}
+
+.band p {
+    letter-spacing: 0.5px;
+    color: #484848;
+    font-size: 1.1rem;
+    padding-top: 0.75em;
+}
+
+.band101 {
+    color: purple;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+}
+
+.band101:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+
+/*Cards*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.cards a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.cards-item {
+    display: flex;
+    padding: 2rem;
+}
+
+@media (min-width: 40rem) {
+    .cards-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards-item {
+        width: 33.3333%;
+    }
+}
+
 .card {
-  display: flex;
-  max-width: 320px;
-  flex-direction: column;
-  align-items: center;
-
-  padding-bottom: 1rem;
-  border-radius: 0.5em;
-
-  background-color: white;
-  box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
 
-.card-img {
-  width: 100%;
-  height: 200px;
-  border-radius: 0.3em;
-  background-position: center;
-  background-size: cover;
+.card-image::before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
 }
 
-.card:nth-of-type(1) .card-img {
-  background-image: url(https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+@media (min-width: 40rem) {
+    .card-image::before {
+        padding-top: 66.6%;
+    }
 }
 
-.card:nth-of-type(2) .card-img {
-  background-image: url(https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1606&q=80);
+.card-image1 {
+    background-image: url(https://unsplash.it/800/600?image=82);
 }
 
-.card:nth-of-type(3) .card-img {
-  background-image: url(https://images.unsplash.com/photo-1628746404106-4d3843b231b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2F2aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60);
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
 }
 
-.card:nth-of-type(4) .card-img {
-  background-image: url(https://images.unsplash.com/photo-1496429862132-5ab36b6ae330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80);
+.card-title {
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    color: #484848;
+}
+
+.cards-button {
+    background-color: white;
+    border: 1px solid #cccccc;
+    color: #696969;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
 }
 
 footer{
