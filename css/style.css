@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root{
-  --HeaderFooterBackground: #1d1f1d;
+  --HeaderFooterBackground: #253447;
   --BackgroundColour: #353836;
   --EdgeAndButtonColour: #eb2f06;
   --White: white;
+  --color-gray-90: hsl(0,0%,90%);
+  --color-gray-80: hsl(0,0%,80%);
+  --color-gray-50: hsl(0,0%,50%);
+  --color-light: hsl(0,0%,100%);
+  --font-size-initial: 15px;
+  --size-initial: 1px;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+*{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -145,6 +151,23 @@ ul li:hover {
   color: black;
 }
 
+.parallax-container2 h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+
+.parallax-container2 p{
+  color: black;
+}
+
+.parallax-container2 h3 {
+  margin-top: 1em;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: black;
+}
+
 .buffer {
   width: 100%;
   min-height: 60vh;
@@ -154,6 +177,9 @@ ul li:hover {
 .parallax-container2 {
   padding: 6rem 0;
   background-image: url(https://images.unsplash.com/photo-1585424536945-26663ea69d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .parallax-container h3 {
@@ -210,95 +236,6 @@ a {
     color: purple;
 }
 
-
-/*Cards*/
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5%;
-    margin-bottom: 1%;
-}
-
-.cards a:hover {
-    color: yellow;
-    text-decoration: none;
-}
-
-.cards-item {
-    display: flex;
-    padding: 2rem;
-}
-
-@media (min-width: 40rem) {
-    .cards-item {
-        width: 50%;
-    }
-}
-
-@media (min-width: 56rem) {
-    .cards-item {
-        width: 33.3333%;
-    }
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: white;
-    border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-}
-
-.card-image::before {
-    display: block;
-    content: "";
-    padding-top: 56.25%;
-}
-
-@media (min-width: 40rem) {
-    .card-image::before {
-        padding-top: 66.6%;
-    }
-}
-
-.card-image1 {
-    background-image: url(https://unsplash.it/800/600?image=82);
-}
-
-.card-content {
-    display: flex;
-    flex-direction: column;
-    padding: 1.25rem;
-}
-
-.card-title {
-    color: #000000;
-    font-size: 1.25rem;
-    font-weight: 500;
-    padding-bottom: 1rem;
-}
-
-.card-text {
-    font-size: 0.875rem;
-    line-height: 1.5;
-    margin-bottom: 1.25rem;
-    color: #484848;
-}
-
-.cards-button {
-    background-color: white;
-    border: 1px solid #cccccc;
-    color: #696969;
-    padding: 0.5rem;
-    text-align: center;
-}
-
-.button-block {
-    display: block;
-    width: 100%;
-}
 
 footer{
   width: 100%;
@@ -429,4 +366,56 @@ footer a:hover{
   #hamburger-icon {
     display: block;
   }
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--font-size-initial) * 18), 1fr));
+  gap: calc(var(--font-size-initial) * 2);
+  margin: auto;
+  max-width: calc(var(--font-size-initial) * 80);
+  padding: calc(var(--font-size-initial) * 2);
+}
+
+.cards{
+  background: var(--color-light);
+  border-radius: calc(var(--font-size-initial) * .5);
+  box-shadow: 0 calc(var(--size-initial) * 3) calc(var(--size-initial) * 6) hsla(0,0%,0%,.1);
+  overflow: hidden;
+}
+
+article{
+  padding: calc(var(--font-size-initial) * 3);
+}
+
+figure{
+  height: calc(var(--font-size-initial) * 15);
+}
+
+/* IMAGE */
+img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* TYPOGRAPHY */
+h3{
+  font-size: calc(var(--font-size-initial) * 2);
+  letter-spacing: calc(var(--size-initial) * -1.25);
+  line-height: calc(var(--font-size-initial) * 2.25);
+  margin: calc(var(--font-size-initial) * .5) 0;
+}
+
+p{
+  font-size: calc(var(--font-size-initial) * .875);
+  line-height: calc(var(--font-size-initial) * 1.25);
+}
+
+span{
+  color: var(--color-gray-80);
+  font-size: calc(var(--font-size-initial) * .75);
+  letter-spacing: calc(var(--size-initial) * .75);
+  text-transform: uppercase;
+  word-spacing: var(--size-initial);
 }
