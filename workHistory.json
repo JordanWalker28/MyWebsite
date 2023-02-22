@@ -9,7 +9,8 @@
         "Responsibility 1",
         "Responsibility 2",
         "Responsibility 3"
-      ]
+      ],
+      "websiteUrl": "https://www.google.com"
     },
     {
       "companyLogo": "company_logo2.png",
@@ -21,6 +22,7 @@
         "Responsibility 1",
         "Responsibility 2",
         "Responsibility 3"
-      ]
+      ],
+      "websiteUrl": "https://www.muse.com"
     }
   ]

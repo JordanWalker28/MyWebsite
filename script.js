@@ -124,6 +124,12 @@ function createItem(item) {
     });
     timelineContent.appendChild(responsibilitiesList);
 
+    // Create the link element
+    const link = document.createElement("a");
+    link.href = item.websiteUrl;
+    link.textContent = "Click here to go to the website";
+    timelineContent.appendChild(link);
+      
     // Add the header and content elements to the timeline item
     timelineItem.appendChild(timelineHeader);
     timelineItem.appendChild(timelineContent);
