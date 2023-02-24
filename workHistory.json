@@ -1,7 +1,7 @@
 [
     {
-      "companyLogo": "company_logo1.png",
-      "companyName": "Company Name 1",
+      "companyLogo": "https://picsum.photos/id/237/200/300",
+      "companyName": "Heriot Watt University",
       "startDate": "Start Date 1",
       "endDate": "End Date 1",
       "description": "Job Description and Responsibilities 1",
@@ -10,11 +10,11 @@
         "Responsibility 2",
         "Responsibility 3"
       ],
-      "websiteUrl": "https://www.google.com"
+      "websiteUrl": "https://www.hw.ac.uk/"
     },
     {
-      "companyLogo": "company_logo2.png",
-      "companyName": "Company Name 2",
+      "companyLogo": "https://picsum.photos/id/237/200/100",
+      "companyName": "Insight Software",
       "startDate": "Start Date 2",
       "endDate": "End Date 2",
       "description": "Job Description and Responsibilities 2",
@@ -23,6 +23,32 @@
         "Responsibility 2",
         "Responsibility 3"
       ],
-      "websiteUrl": "https://www.muse.com"
+      "websiteUrl": "https://insightsoftware.com/"
+    },
+    {
+      "companyLogo": "https://picsum.photos/id/2/200/300",
+      "companyName": "Trading Hub",
+      "startDate": "Start Date 2",
+      "endDate": "End Date 2",
+      "description": "Job Description and Responsibilities 2",
+      "responsibilities": [
+        "Responsibility 1",
+        "Responsibility 2",
+        "Responsibility 3"
+      ],
+      "websiteUrl": "https://tradinghub.com/"
+    },
+    {
+      "companyLogo": "https://picsum.photos/id/1/2/3",
+      "companyName": "Live Nation",
+      "startDate": "Start Date 2",
+      "endDate": "End Date 2",
+      "description": "Job Description and Responsibilities 2",
+      "responsibilities": [
+        "Responsibility 1",
+        "Responsibility 2",
+        "Responsibility 3"
+      ],
+      "websiteUrl": "https://www.livenation.co.uk/"
     }
   ]
