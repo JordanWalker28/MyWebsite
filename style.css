@@ -111,17 +111,6 @@ body {
     color: #333;
     line-height: 1.5;
   }
-
-  /* Line between header and content */
-.timeline-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -2px;
-    height: 100%;
-    width: 2px;
-    background-color: #ccc;
-  }
   
   .timeline-content p {
     margin-bottom: 10px;
