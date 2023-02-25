@@ -127,7 +127,7 @@ function createItem(item) {
     // Create the link element
     const link = document.createElement("a");
     link.href = item.websiteUrl;
-    link.textContent = item.websiteUrl;
+    link.textContent = item.companyName;
     timelineContent.appendChild(link);
       
     // Add the header and content elements to the timeline item
