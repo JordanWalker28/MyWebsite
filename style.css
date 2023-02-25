@@ -44,7 +44,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding: 1rem;
-    background: linear-gradient(to bottom right, #c9e9f7, #f8c8c7);
+    background: linear-gradient(to bottom right, #efefef, #5c6a8a);
   }
   
   .timeline-header img {
@@ -139,26 +139,45 @@ body {
       margin-bottom: 5px;
     }
   }
-  
-  
-  
-  #filters {
-    text-align: center;
-    margin: 1em 0;
+
+  /* Center the filters and add margin */
+#filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
   }
   
+  /* Add margin to the label and reduce redundancy */
   #filters label {
-    margin-right: 1em;
+    margin-right: 1rem;
+    font-size: 1.2rem;
   }
   
-  #filters select {
-    margin-right: 2em;
-    padding: 0.25em;
-  }
-  
+  /* Add padding and reduce redundancy */
+  #filters select,
   #filters input[type="text"] {
-    padding: 0.25em;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out;
   }
+  
+  /* Add hover effect to inputs */
+  #filters select:hover,
+  #filters input[type="text"]:hover {
+    border-color: #555;
+  }
+  
+  /* Add focus effect to inputs */
+  #filters select:focus,
+  #filters input[type="text"]:focus {
+    border-color: #0077cc;
+    outline: none;
+  }
+  
 
   .window {
     display: none;
