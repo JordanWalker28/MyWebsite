@@ -1,3 +1,27 @@
+/* Colors */
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #efefef;
+    --color-accent: #5c6a8a;
+    --color-background: #fff;
+    --color-border: #eee;
+    --color-text: #333;
+    --color-text-light: #555;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-gradient: linear-gradient(to bottom right, var(--color-secondary), var(--color-accent));
+  }
+  
+/* Fonts */
+:root {
+--font-primary: Arial, sans-serif;
+--font-secondary: 'Open Sans', sans-serif;
+--font-size-base: 16px;
+--font-size-header: 1.5rem;
+--font-size-subheader: 1.2rem;
+--line-height-base: 1.5;
+--font-weight-bold: bold;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -44,7 +68,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding: 1rem;
-    background: linear-gradient(to bottom right, #efefef, #5c6a8a);
+    background: var(--color-gradient);
   }
   
   .timeline-header img {
