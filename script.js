@@ -203,3 +203,31 @@ function showWindow() {
     });
 }
 
+// Get references to the Download and Open buttons
+var downloadButton = document.getElementById("download-button");
+var openButton = document.getElementById("open-button");
+
+// Set the URL of the PDF file
+var pdfUrl = "/sample.pdf";
+
+// Add event listeners to the buttons
+downloadButton.addEventListener("click", downloadPdf);
+openButton.addEventListener("click", openPdfInNewTab);
+
+// Function to download the PDF file
+function downloadPdf() {
+  // Create a link element with the PDF file URL as its href attribute
+  var link = document.createElement("a");
+  link.setAttribute("href", pdfUrl);
+  link.setAttribute("download", "cv.pdf");
+  
+  // Click the link element to trigger the download
+  link.click();
+}
+
+// Function to open the PDF file in a new tab
+function openPdfInNewTab() {
+  // Open the PDF file URL in a new tab using the window.open() method
+  window.open(pdfUrl);
+}
+
