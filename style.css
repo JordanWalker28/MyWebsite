@@ -13,13 +13,13 @@
   
 /* Fonts */
 :root {
---font-primary: Arial, sans-serif;
---font-secondary: 'Open Sans', sans-serif;
---font-size-base: 16px;
---font-size-header: 1.5rem;
---font-size-subheader: 1.2rem;
---line-height-base: 1.5;
---font-weight-bold: bold;
+    --font-primary: Arial, sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --font-size-base: 16px;
+    --font-size-header: 1.5rem;
+    --font-size-subheader: 1.2rem;
+    --line-height-base: 1.5;
+    --font-weight-bold: bold;
 }
 
 body {
@@ -209,7 +209,7 @@ body {
 
 .window-header {
     padding: 10px;
-    background-color: #007bff;
+    background-color: var(--color-accent);
     color: #fff;
     font-size: 20px;
     font-weight: bold;
@@ -240,5 +240,10 @@ body {
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 20px;
+    float:right;
 }
-  
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
