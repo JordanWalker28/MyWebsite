@@ -48,15 +48,8 @@ initializeTimeline();
 function filterByCompanyName(companyName) {
     // Filter the timelineData array to include only items with the specified company name
     const filteredData = timelineData.filter(item => item.companyName === companyName || !companyName);
-
     // Remove all existing timeline items from the container
-    timelineContainer.innerHTML = "";
-
-    // Loop through the filtered data and generate HTML for each item
-    filteredData.forEach(item => {
-        // ... generate HTML for timeline item ...
-        createItem(item);
-    });
+    returnFilteredItems(filteredData);
 }
 
 // Function to search the timeline data by keyword
@@ -70,8 +63,11 @@ function searchTimeline(query) {
     });
 
     // Remove all existing timeline items from the container
-    timelineContainer.innerHTML = "";
+    returnFilteredItems(filteredData);
+}
 
+function returnFilteredItems(filteredData) {
+    timelineContainer.innerHTML = "";
     // Loop through the filtered data and generate HTML for each item
     filteredData.forEach(item => {
         // ... generate HTML for timeline item ...
