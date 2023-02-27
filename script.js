@@ -88,7 +88,7 @@ function createItem(item) {
     // Create the company logo element
     const logoImg = document.createElement("img");
     logoImg.src = item.companyLogo;
-    logoImg.alt = "Company Logo";
+    logoImg.alt = item.companyName;
     timelineHeader.appendChild(logoImg);
 
     // Create the company name element
@@ -133,7 +133,6 @@ function createItem(item) {
     // Add the timeline item to the container
     timelineContainer.appendChild(timelineItem);
 }
-
 
 // Make the window draggable
 dragElement(document.getElementById("myWindow"));
