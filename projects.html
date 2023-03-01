@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Projects</title>
+    <style>
+      /* CSS for the grid container */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+      }
+      
+      /* CSS for each project item */
+      .project-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      /* Hover effect for project items */
+      .project-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      }
+      
+      /* CSS for project item images */
+      .project-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+      }
+      
+      /* Optional CSS for project item headings */
+      .project-item h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      
+      /* Optional CSS for project item descriptions */
+      .project-item p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="project-item">
+        <img src="project1.jpg" alt="Project 1">
+        <h2>Project 1</h2>
+        <p>Description of project 1.</p>
+      </div>
+      <div class="project-item">
+        <img src="project2.jpg" alt="Project 2">
+        <h2>Project 2</h2>
+        <p>Description of project 2.</p>
+      </div>
+      <div class="project-item">
+        <img src="project3.jpg" alt="Project 3">
+        <h2>Project 3</h2>
+        <p>Description of project 3.</p>
+      </div>
+      <div class="project-item">
+        <img src="project4.jpg" alt="Project 4">
+        <h2>Project 4</h2>
+        <p>Description of project 4.</p>
+      </div>
+      <div class="project-item">
+        <img src="project5.jpg" alt="Project 5">
+        <h2>Project 5</h2>
+        <p>Description of project 5.</p>
+      </div>
+      <div class="project-item">
+        <img src="project6.jpg" alt="Project 6">
+        <h2>Project 6</h2>
+        <p>Description of project 6.</p>
+      </div>
+    </div>
+  </body>
+</html>
