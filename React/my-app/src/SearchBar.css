@@ -1,0 +1,35 @@
+.headerSearch__input__form {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    border: 10px solid #000;
+}
+
+.headerSearch__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.headerSearch__wrapper--open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.headerSearch__wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.loginbar__listitem loginbar__listitem--search{
+    flex: initial;
+    border-width: 1px;
+}
