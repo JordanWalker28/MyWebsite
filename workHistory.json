@@ -1,6 +1,6 @@
 [
   {
-    "companyLogo": "https://media.licdn.com/dms/image/C4E0BAQEBJmOqjJQVmA/company-logo_200_200/0/1519884584783?e=1685577600&v=beta&t=7oONqsqF-f_XEEQTth9IqeFmk5tmR5LqphnIrJzChEk",
+    "companyLogo": "img/carlisleLogo.png",
     "companyName": "Carlisle College",
     "startDate": "Sep 2013",
     "endDate": "Jun 2015 ",
@@ -13,7 +13,7 @@
     "websiteUrl": "https://www.carlisle.ac.uk/"
   },
   {
-    "companyLogo": "https://media.licdn.com/dms/image/C4E0BAQG5DsVDArsdVw/company-logo_100_100/0/1663673796263?e=1685577600&v=beta&t=JNv4fhMbMxwB7gGYPNOU594SE0W6cQPM5wfzlew4tmo",
+    "companyLogo": "img/heriotLogo.png",
     "companyName": "Heriot Watt University",
     "startDate": "Sep 2015,",
     "endDate": "Jun 2019 ",
@@ -26,7 +26,7 @@
     "websiteUrl": "https://www.hw.ac.uk/"
   },
     {
-      "companyLogo": "https://media.licdn.com/dms/image/C4E0BAQG5DsVDArsdVw/company-logo_100_100/0/1663673796263?e=1685577600&v=beta&t=JNv4fhMbMxwB7gGYPNOU594SE0W6cQPM5wfzlew4tmo",
+      "companyLogo": "img/heriotLogo.png",
       "companyName": "Heriot Watt University",
       "startDate": "Sep 2018",
       "endDate": "Jun 2019 ",
@@ -39,7 +39,7 @@
       "websiteUrl": "https://www.hw.ac.uk/"
     },
     {
-      "companyLogo": "https://media.licdn.com/dms/image/C560BAQF-Fb5cMzcHrg/company-logo_100_100/0/1654720325876?e=1685577600&v=beta&t=IjqAY86j7QvMfoqhmz1INNX0CZhi-kbC50qfxMn8w2Q",
+      "companyLogo": "img/insightLogo.jpeg",
       "companyName": "Insight Software",
       "startDate": "Sep 2019",
       "endDate": "Feb 2021",
@@ -52,7 +52,7 @@
       "websiteUrl": "https://insightsoftware.com/"
     },
     {
-      "companyLogo": "https://media.licdn.com/dms/image/C4E0BAQHj3ka1_7PjJQ/company-logo_100_100/0/1671099808357?e=1685577600&v=beta&t=ESVTVnYMFSDkzAJOSp5_YQplML4Xae20ok4ndo_ATMA",
+      "companyLogo": "img/tradingLogo.jpeg",
       "companyName": "Trading Hub",
       "startDate": "Feb 2021",
       "endDate": "May 2022",
@@ -65,7 +65,7 @@
       "websiteUrl": "https://tradinghub.com/"
     },
     {
-      "companyLogo": "https://media.licdn.com/dms/image/C4E0BAQG1jbGWmj-1mg/company-logo_100_100/0/1625155312401?e=1685577600&v=beta&t=fvyswBG-hUN8WXvWIE3CmMHzRpTTlESwM_5y0my84tg",
+      "companyLogo": "img/liveNationLogo.png",
       "companyName": "Live Nation",
       "startDate": "May 2022",
       "endDate": "Present",

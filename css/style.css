@@ -384,6 +384,11 @@ main{
   overflow: hidden;
 }
 
+.timeline{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 article{
   padding: calc(var(--font-size-initial) * 3);
 }

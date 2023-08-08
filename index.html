@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <title>Jordan W</title>
 </head>
@@ -108,6 +109,37 @@
         </article>
       </section>
     </main>
+    <div id="Resume">/</div>
+    <section class="timeline">
+
+      <h1>My Work Timeline</h1>
+
+      <div id="filters">
+        
+        <label for="company-name-filter">Filter by Company Name:</label>
+        <select id="company-name-filter">
+          <option value="">All</option>
+        </select>
+        
+        <label for="search-input">Search:</label>
+        <input type="text" id="search-input">
+      </div>
+      
+      <div id="timeline-container"></div>
+  
+      <div class="container">
+  
+      <button class="show-btn" onclick="showWindow()">Download/View CV</button>
+      </div>
+      <div class="window" id="myWindow">
+          <div class="window-header" id="myHeader">Download or Open CV</div>
+          <div class="window-close" onclick="closeWindow()">&times;</div>
+          <div class="window-body">
+            <button id="download-button" style="display: inline-block;">Download</button>
+            <button id="open-button" style="display: inline-block;">Open</button>
+          </div>
+        </div>
+      </section>
   </section>
 
   <footer>
@@ -148,6 +180,7 @@
   </footer>
  
   <script src="/js/index.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
