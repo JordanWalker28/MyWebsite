@@ -52,3 +52,51 @@
   .hamburger:hover {
     background-color: #2642af;
   }
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navigation-menu ul {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navigation-menu ul {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      height: calc(100vh - 77px);
+      background-color: white;
+      border-top: 1px solid black;
+    }
+    .navigation-menu li {
+      text-align: center;
+      margin: 0;
+    }
+    .navigation-menu li a {
+      color: black;
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+    .navigation-menu li:hover {
+      background-color: #eee;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .navigation-menu ul {
+      /* previous styles */
+      dipslay: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .navigation-menu.expanded ul {
+      display: block;
+    }
+  }
