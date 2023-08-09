@@ -2,6 +2,7 @@
 // App.js
 import Navbar from "./components/Navbar";
 import "./styles.css";
+import React from "react"
 
 export default function App() {
   return (

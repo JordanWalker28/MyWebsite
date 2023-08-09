@@ -1,7 +1,7 @@
  
 // Navbar.js 
 import "../styles/navbar.css"
-
+import React from "react"
 import { useState } from "react"
 import "../styles/navbar.css"
 
