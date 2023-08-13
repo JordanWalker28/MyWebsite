@@ -4,14 +4,18 @@ import { Link } from 'react-router-dom';
 import "../styles/navbar.css"
 import React from "react"
 import { useState } from "react"
-import "../styles/navbar.css"
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
 
+  const closeMenu = () => {
+    setIsNavExpanded(false);
+  };
+
+
   return (
     <nav className="navigation">
-      <Link to="/" className="brand-name">
+      <Link to="/" className="brand-name" onClick={closeMenu}>
         JordanW
       </Link>
       <button
@@ -39,13 +43,13 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={closeMenu}>Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={closeMenu}>About</Link>
           </li>
           <li>
-            <Link to="/posts">Posts</Link>
+            <Link to="/posts" onClick={closeMenu}>Posts</Link>
           </li>
         </ul>
       </div>
