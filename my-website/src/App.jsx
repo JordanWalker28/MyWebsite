@@ -5,16 +5,19 @@ import {
   import Navbar from './components/Navbar';
 import Home from "./components/Home"
 import About from "./components/About"
+import Resume from "./components/Resume"
 import NotFound from './components/NotFound';
 import Posts from './components/Posts';
 import PostsLists from './components/PostsLists';
 import Post from './components/Post';
+
 function App() {
   return (
     <Router>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/posts" element={<Posts />}>
           <Route index element={<PostsLists />} />
           <Route path=":slug" element={<Post />} />

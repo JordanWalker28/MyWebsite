@@ -1,19 +1,10 @@
 import { useParams } from 'react-router-dom';
+import BlogPostsData from '../json/BlogData.json'; // Adjust the path based on your directory structure
 
-const BlogPosts = {
-    'first-blog-post': {
-        title: 'First Blog Post',
-        description: 'Lorem ipsum dolor sit amet, consectetur adip.'
-    },
-    'second-blog-post': {
-        title: 'Second Blog Post',
-        description: 'Hello React Router v6'
-    }
-    };
 
 function Post() {
     const { slug } = useParams();
-    const post = BlogPosts[slug];
+    const post = BlogPostsData[slug];
     if(!post) {
       return <span>The blog post you've requested doesn't exist.</span>;
     }

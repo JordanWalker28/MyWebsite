@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+a:link,
+a:visited {
+    color: #000; /* Set the color you want here */
+}
+
+/* Hover effect - optional */
+a:hover {
+    color: #00f; /* Set the color for hover effect */
+}
