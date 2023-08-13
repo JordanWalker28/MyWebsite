@@ -1,5 +1,6 @@
  
 // Navbar.js 
+import { Link } from 'react-router-dom';
 import "../styles/navbar.css"
 import React from "react"
 import { useState } from "react"
@@ -10,9 +11,9 @@ export default function Navbar() {
 
   return (
     <nav className="navigation">
-      <a href="/" className="brand-name">
+      <Link to="/" className="brand-name">
         JordanW
-      </a>
+      </Link>
       <button
         className="hamburger"
         onClick={() => {
