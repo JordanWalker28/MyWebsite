@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <nav className="navigation">
-      <NavLink to="/" className="brand-name" onClick={closeMenu}>
+      <NavLink activeclassname="none" to="/" className="brand-name" onClick={closeMenu}>
         JordanW
       </NavLink>
       <button
@@ -43,13 +43,19 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <NavLink exact activeClassName="active" to="/resume" onClick={closeMenu}>Resume</NavLink>
+            <NavLink activeclassname="active" to="/projects" onClick={closeMenu}>Projects</NavLink>
           </li>
           <li>
-            <NavLink exact activeClassName="active" to="/about" onClick={closeMenu}>About</NavLink>
+            <NavLink activeclassname="active" to="/posts" onClick={closeMenu}>Posts</NavLink>
           </li>
           <li>
-            <NavLink exact activeClassName="active" to="/posts" onClick={closeMenu}>Posts</NavLink>
+            <NavLink activeclassname="active" to="/resume" onClick={closeMenu}>Resume</NavLink>
+          </li>
+          <li>
+            <NavLink activeclassname="active" to="/about" onClick={closeMenu}>About</NavLink>
+          </li>
+          <li>
+            <NavLink activeclassname="active" to="/contact" onClick={closeMenu}>Contact</NavLink>
           </li>
         </ul>
       </div>
