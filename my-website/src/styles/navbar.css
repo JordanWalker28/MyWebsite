@@ -20,6 +20,11 @@ a:hover {
     color: #00f; /* Set the color for hover effect */
 }
 
+.active{
+  background-color: red;
+  color: #fff;
+}
+
 .brand-name {
     text-decoration: none;
     color: black;

@@ -1,6 +1,6 @@
  
 // Navbar.js 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "../styles/navbar.css"
 import React from "react"
 import { useState } from "react"
@@ -15,9 +15,9 @@ export default function Navbar() {
 
   return (
     <nav className="navigation">
-      <Link to="/" className="brand-name" onClick={closeMenu}>
+      <NavLink to="/" className="brand-name" onClick={closeMenu}>
         JordanW
-      </Link>
+      </NavLink>
       <button
         className="hamburger"
         onClick={() => {
@@ -43,16 +43,13 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <Link to="/" onClick={closeMenu}>Home</Link>
+            <NavLink exact activeClassName="active" to="/resume" onClick={closeMenu}>Resume</NavLink>
           </li>
           <li>
-            <Link to="/resume" onClick={closeMenu}>Resume</Link>
+            <NavLink exact activeClassName="active" to="/about" onClick={closeMenu}>About</NavLink>
           </li>
           <li>
-            <Link to="/about" onClick={closeMenu}>About</Link>
-          </li>
-          <li>
-            <Link to="/posts" onClick={closeMenu}>Posts</Link>
+            <NavLink exact activeClassName="active" to="/posts" onClick={closeMenu}>Posts</NavLink>
           </li>
         </ul>
       </div>
