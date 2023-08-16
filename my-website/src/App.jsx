@@ -18,16 +18,16 @@ function App() {
     <Router>
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/posts" element={<Posts />}>
+        <Route path="/" element={<Home title="Hello"/>} />
+        <Route path="/resume" element={<Resume title="Resume"/>} />
+        <Route path="/posts" element={<Posts title="Posts"/>}>
           <Route index element={<PostsLists />} />
           <Route path=":slug" element={<Post />} />
         </Route>
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/about" element={<About title="About"/>} />
+        <Route path="/contact" element={<Contact title="Contact"/>} />
+        <Route path="/projects" element={<Projects title="Projects"/>} />
+        <Route path="*" element={<NotFound title="404: Page Not Found"/>} />
       </Routes>
     </Router>
   );

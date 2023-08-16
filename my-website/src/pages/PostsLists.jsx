@@ -14,7 +14,6 @@ const BlogPosts = {
 function PostsLists() {
 return (
     <div>
-    <h2>Blog Posts</h2>
     <ul>
     {Object.entries(BlogPosts).map(([slug, { title }]) => (
         <li key={slug}>

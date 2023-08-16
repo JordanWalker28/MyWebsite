@@ -1,11 +1,14 @@
 import {Outlet } from 'react-router-dom';
+import React from 'react';
+import Page from '../components/Page';
 
-function Posts() {
-    return (
-      <div style={{ padding: 20 }}>
+function Posts({title}) {
+  return (
+    <Page title={title}>
         <Outlet />
-      </div>
-    );
+    </Page>
+  );
   }
+
 
   export default Posts;

@@ -1,9 +1,11 @@
-function About() {
+import React from 'react';
+import Page from '../components/Page';
+
+function About({title}) {
     return (
-      <div style={{ padding: 20 }}>
-        <h2>About View</h2>
+      <Page title={title}>
         <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
-      </div>
+      </Page>
     );
   }
 

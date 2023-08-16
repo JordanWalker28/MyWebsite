@@ -1,10 +1,12 @@
-function Resume() {
-    return (
-      <div style={{ padding: 20 }}>
-        <h2>Resume View</h2>
+import React from 'react';
+import Page from '../components/Page';
+
+function Resume({title}) {
+  return (
+    <Page title={title}>
         <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
-      </div>
-    );
+    </Page>
+  );
   }
 
 export default Resume;

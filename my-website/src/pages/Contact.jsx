@@ -1,10 +1,12 @@
-function Contact() {
-    return (
-      <div style={{ padding: 20 }}>
-        <h2>Contact View</h2>
+import React from 'react';
+import Page from '../components/Page';
+
+function Contact({title}) {
+  return (
+    <Page title={title}>
         <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
-      </div>
-    );
+    </Page>
+  );
   }
 
 export default Contact;

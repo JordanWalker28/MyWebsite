@@ -1,10 +1,12 @@
-function Projects() {
-    return (
-      <div style={{ padding: 20 }}>
-        <h2>Projects View</h2>
+import React from 'react';
+import Page from '../components/Page';
+
+function Projects({title}) {
+  return (
+    <Page title={title}>
         <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
-      </div>
-    );
+    </Page>
+  );
   }
 
 export default Projects;
