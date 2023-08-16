@@ -5,17 +5,13 @@ import '../styles/navbar.css';
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-  const closeMenu = () => {
-    setIsNavExpanded(false);
-  };
-
   const toggleMenu = () => {
     setIsNavExpanded(!isNavExpanded);
   };
 
   return (
     <nav className="navigation">
-      <Link to="/" className="brand-name" onClick={closeMenu}>
+      <Link to="/" className="brand-name" onClick={toggleMenu}>
         JordanW
       </Link>
       <button className="hamburger" onClick={toggleMenu}>
@@ -35,27 +31,27 @@ export default function Navbar() {
       <div className={`navigation-menu ${isNavExpanded ? 'expanded' : ''}`}>
         <ul>
           <li>
-            <NavLink activeClassName="active" to="/projects" onClick={closeMenu}>
+            <NavLink activeClassName="active" to="/projects" onClick={toggleMenu}>
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/posts" onClick={closeMenu}>
+            <NavLink activeClassName="active" to="/posts" onClick={toggleMenu}>
               Posts
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/resume" onClick={closeMenu}>
+            <NavLink activeClassName="active" to="/resume" onClick={toggleMenu}>
               Resume
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/about" onClick={closeMenu}>
+            <NavLink activeClassName="active" to="/about" onClick={toggleMenu}>
               About
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/contact" onClick={closeMenu}>
+            <NavLink activeClassName="active" to="/contact" onClick={toggleMenu}>
               Contact
             </NavLink>
           </li>
