@@ -1,10 +1,14 @@
-function Home() {
-    return (
-      <div style={{ padding: 20 }}>
-        <h2>Home View</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
-      </div>
-    );
-  }
+import React from 'react';
+import Page from '../components/Page'; // Adjust the import path based on your project structure
 
-  export default Home;
+function Home() {
+  const title = "Hello";
+
+  return (
+    <Page title={title}>
+      <p>I'm a seasoned software engineer specializing in C# with hands-on experience in React, Angular, Vue, HTML, CSS, and JavaScript. With a career spanning years, I've built robust solutions and versatile applications. I excel in translating intricate concepts into efficient, high-quality code. My front-end proficiency complements my backend skills, creating a holistic full-stack understanding. A strong advocate for best practices, I thrive in collaborative, innovative environments and consistently embrace new technologies to drive excellence in software development.</p>
+    </Page>
+  );
+}
+
+export default Home;
