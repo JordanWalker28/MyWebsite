@@ -6,5 +6,9 @@
     "second-blog-post": {
       "title": "Second Blog Post",
       "description": "Hello React Router v6"
+    },
+    "third-blog-post": {
+      "title": "Third Blog Post",
+      "description": "Hello React Router v7"
     }
   }

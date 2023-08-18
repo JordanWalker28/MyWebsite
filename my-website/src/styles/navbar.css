@@ -89,6 +89,10 @@ a:hover::before, a:focus::before {
     background-color: #2642af;
   }
 
+  .active {
+    border-bottom: 3px solid black;
+  }
+
   @media screen and (max-width: 768px) {
     .hamburger {
       display: block;

@@ -31,22 +31,22 @@ export default function Navbar() {
       <div className={`navigation-menu ${isNavExpanded ? 'expanded' : ''}`}>
         <ul>
           <li>
-            <NavLink activeClassName="active" to="/projects" onClick={toggleMenu}>
+            <NavLink to="/projects" onClick={toggleMenu}>
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/posts" onClick={toggleMenu}>
+            <NavLink to="/posts" onClick={toggleMenu}>
               Posts
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/resume" onClick={toggleMenu}>
+            <NavLink to="/resume" onClick={toggleMenu}>
               Resume
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/about" onClick={toggleMenu}>
+            <NavLink to="/about" onClick={toggleMenu}>
               About
             </NavLink>
           </li>
