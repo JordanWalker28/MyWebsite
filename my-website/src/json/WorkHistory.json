@@ -1,0 +1,80 @@
+[
+  {
+    "companyLogo": "img/carlisleLogo.png",
+    "companyName": "Carlisle College",
+    "startDate": "Sep 2013",
+    "endDate": "Jun 2015 ",
+    "description": "Job Description and Responsibilities 1",
+    "responsibilities": [
+      "Responsibility 1",
+      "Responsibility 2",
+      "Responsibility 3"
+    ],
+    "websiteUrl": "https://www.carlisle.ac.uk/"
+  },
+  {
+    "companyLogo": "img/heriotLogo.png",
+    "companyName": "Heriot Watt University",
+    "startDate": "Sep 2015,",
+    "endDate": "Jun 2019 ",
+    "description": "Job Description and Responsibilities 1",
+    "responsibilities": [
+      "Responsibility 1",
+      "Responsibility 2",
+      "Responsibility 3"
+    ],
+    "websiteUrl": "https://www.hw.ac.uk/"
+  },
+    {
+      "companyLogo": "img/heriotLogo.png",
+      "companyName": "Heriot Watt University",
+      "startDate": "Sep 2018",
+      "endDate": "Jun 2019 ",
+      "description": "Job Description and Responsibilities 1",
+      "responsibilities": [
+        "Responsibility 1",
+        "Responsibility 2",
+        "Responsibility 3"
+      ],
+      "websiteUrl": "https://www.hw.ac.uk/"
+    },
+    {
+      "companyLogo": "img/insightLogo.jpeg",
+      "companyName": "Insight Software",
+      "startDate": "Sep 2019",
+      "endDate": "Feb 2021",
+      "description": "Job Description and Responsibilities 2",
+      "responsibilities": [
+        "Responsibility 1",
+        "Responsibility 2",
+        "Responsibility 3"
+      ],
+      "websiteUrl": "https://insightsoftware.com/"
+    },
+    {
+      "companyLogo": "img/tradingLogo.jpeg",
+      "companyName": "Trading Hub",
+      "startDate": "Feb 2021",
+      "endDate": "May 2022",
+      "description": "Job Description and Responsibilities 2",
+      "responsibilities": [
+        "Responsibility 1",
+        "Responsibility 2",
+        "Responsibility 3"
+      ],
+      "websiteUrl": "https://tradinghub.com/"
+    },
+    {
+      "companyLogo": "img/liveNationLogo.png",
+      "companyName": "Live Nation",
+      "startDate": "May 2022",
+      "endDate": "Present",
+      "description": "Job Description and Responsibilities 2",
+      "responsibilities": [
+        "Responsibility 1",
+        "Responsibility 2",
+        "Responsibility 3"
+      ],
+      "websiteUrl": "https://www.livenation.co.uk/"
+    }
+  ]
