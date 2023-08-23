@@ -11,7 +11,7 @@ import Posts from './pages/Posts';
 import PostsLists from './pages/PostsLists';
 import Post from './components/Post';
 import Contact from './pages/Contact';
-import Projects from './pages/Projects';
+import Projects from './pages/ProjectsList';
 
 function App() {
   return (

@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Project 1",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Year": 2020,
+        "CurrentlyMaintained": true,
+        "Image": "project1.jpg",
+        "URL": "https://example.com/project1"
+    },
+    {
+        "Name": "Project 2",
+        "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "Year": 2021,
+        "CurrentlyMaintained": false,
+        "Image": "project2.jpg",
+        "URL": "https://example.com/project2"
+    },
+    {
+        "Name": "Project 3",
+        "Description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Year": 2022,
+        "CurrentlyMaintained": true,
+        "Image": "project3.jpg",
+        "URL": "https://example.com/project3"
+    }
+]
