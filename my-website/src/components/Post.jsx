@@ -1,6 +1,5 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import BlogPostsData from '../json/BlogData.json'; // Adjust the path based on your directory structure
-
 
 function Post() {
     const { slug } = useParams();
@@ -11,6 +10,7 @@ function Post() {
     const { title, description } = post;
     return (
       <div style={{ padding: 20 }}>
+        <Link to={`/posts`}>Back</Link>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Projects from '../json/Projects.json'; // Adjust the path based on your directory structure
 
 
@@ -8,11 +8,12 @@ function Project() {
     if(!project) {
       return <span>The blog post you've requested doesn't exist.</span>;
     }
-    const { title, description } = project;
+    const { Name, Description } = project;
     return (
       <div style={{ padding: 20 }}>
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <Link to={`/projects`}>Back</Link>
+        <h3>{Name}</h3>
+        <p>{Description}</p>
       </div>
     );
   }
