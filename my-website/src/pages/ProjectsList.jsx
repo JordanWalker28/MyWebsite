@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Projects from '../json/Projects.json'; // Adjust the path to the JSON file
 
-function PostsLists() {
+function ProjectsList() {
   return (
     <div>
       <ul>
@@ -17,4 +17,4 @@ function PostsLists() {
   );
 }
 
-export default PostsLists;
+export default ProjectsList;

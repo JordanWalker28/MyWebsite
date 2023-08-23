@@ -11,4 +11,4 @@ function Projects({title}) {
   }
 
 
-  export default Posts;
+  export default Projects;

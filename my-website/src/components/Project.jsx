@@ -17,4 +17,4 @@ function Project() {
     );
   }
 
-  export default Post;
+  export default Project;
