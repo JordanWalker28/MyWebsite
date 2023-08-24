@@ -2,9 +2,9 @@ import {Outlet } from 'react-router-dom';
 import React from 'react';
 import Page from '../components/Page';
 
-function Projects({Name}) {
+function Projects({title}) {
   return (
-    <Page title={Name}>
+    <Page title={title}>
         <Outlet />
     </Page>
   );
