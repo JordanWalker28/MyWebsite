@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/navbar.css';
 
 export default function Navbar() {
@@ -11,9 +11,9 @@ export default function Navbar() {
 
   return (
     <nav className="navigation">
-      <Link to="/" className="brand-name" onClick={toggleMenu}>
+      <NavLink to="/" onClick={toggleMenu}>
         JordanW
-      </Link>
+      </NavLink>
       <button className="hamburger" onClick={toggleMenu}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/contact" onClick={toggleMenu}>
+            <NavLink to="/contact" onClick={toggleMenu}>
               Contact
             </NavLink>
           </li>

@@ -6,16 +6,14 @@ import data from '../json/WorkHistory.json';
 function Resume({ title }) {
   const [searchValue, setSearchValue] = useState('');
 
-  // Moved outside the filter function
   const lowercaseSearchValue = searchValue.toLowerCase();
 
-  const items = data;
-console.log(items);
   // Filtered data based on search value
-  const filteredData = items.filter(item => {
-    const companyMatch = item.companyName.toLowerCase().includes(lowercaseSearchValue);
-    return companyMatch;
-  });
+  const filteredData = data.filter(item => 
+    item.companyName.toLowerCase().includes(lowercaseSearchValue)
+  );
+
+  const isFiltered = lowercaseSearchValue !== '';
 
   return (
     <Page title={title}>
@@ -28,11 +26,14 @@ console.log(items);
           onChange={e => setSearchValue(e.target.value)}
         />
       </div>
-      <div className="timeline">
+      <div className={`timeline ${isFiltered ? 'filtered' : ''}`}>
         {filteredData.length > 0 ? (
           filteredData.map((item, index) => (
-            <TimelineItem key={index} item={item} />
-          ))
+            <TimelineItem
+              key={index}
+              item={item}
+              className={`timeline-item ${isFiltered ? 'slide-in' : 'slide-out'}`}
+            />          ))
         ) : (
           <p>No matching items found.</p>
         )}

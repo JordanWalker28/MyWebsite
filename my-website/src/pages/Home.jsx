@@ -1,5 +1,6 @@
 import React from 'react';
-import Page from '../components/Page'; // Adjust the import path based on your project structure
+import Page from '../components/Page';
+
 function Home({title}) {
   return (
     <Page title={title}>
