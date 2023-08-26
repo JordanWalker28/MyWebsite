@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import Page from '../components/Page';
 import TimelineItem from '../components/TimelineItem';
-import '../styles/timeline.css';
-import data from '../json/WorkHistory.json'; // Adjust the path to the JSON file
+import data from '../json/WorkHistory.json';
 
 function Resume({ title }) {
   const [searchValue, setSearchValue] = useState('');
 
-  const filteredData = data.filter(item => {
-    const searchMatch = searchValue === '' || (
-      item.company && item.company.toLowerCase().includes(searchValue.toLowerCase()) ||
-      item.title && item.title.toLowerCase().includes(searchValue.toLowerCase())
-    );
+  // Moved outside the filter function
+  const lowercaseSearchValue = searchValue.toLowerCase();
 
-    return searchMatch;
+  const items = data;
+console.log(items);
+  // Filtered data based on search value
+  const filteredData = items.filter(item => {
+    const companyMatch = item.companyName.toLowerCase().includes(lowercaseSearchValue);
+    return companyMatch;
   });
 
   return (
@@ -28,9 +29,13 @@ function Resume({ title }) {
         />
       </div>
       <div className="timeline">
-        {filteredData.map((item, index) => (
-          <TimelineItem key={index} item={item} />
-        ))}
+        {filteredData.length > 0 ? (
+          filteredData.map((item, index) => (
+            <TimelineItem key={index} item={item} />
+          ))
+        ) : (
+          <p>No matching items found.</p>
+        )}
       </div>
     </Page>
   );
