@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Page from '../components/Page';
 import TimelineItem from '../components/TimelineItem';
 import data from '../json/WorkHistory.json';
+import myPdfFile from '../pdfs/jordan_walker_cv.pdf';
 
 function Resume({ title }) {
   const [searchValue, setSearchValue] = useState('');
@@ -38,6 +39,9 @@ function Resume({ title }) {
           <option value="Education">Education</option>
           <option value="Employment">Employment</option>
         </select>
+      </div>
+      <div>
+        <button onClick={() => window.open(myPdfFile, '_blank')}>Open PDF</button>
       </div>
       <div className={`timeline ${isFiltered ? 'filtered' : ''}`}>
         {filteredData.length > 0 ? (
