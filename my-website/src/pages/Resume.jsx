@@ -3,21 +3,35 @@ import Page from '../components/Page';
 import TimelineItem from '../components/TimelineItem';
 import data from '../json/WorkHistory.json';
 import myPdfFile from '../pdfs/jordan_walker_cv.pdf';
+import FilterComponent from '../components/FilterComponent'
 
 function Resume({ title }) {
   const [searchValue, setSearchValue] = useState('');
-  const [filterType, setFilterType] = useState('All'); // Added state for filter type
+
+  const filterOptions = [
+    { value: 'All', label: 'All' },
+    { value: 'Education', label: 'Education' },
+    { value: 'Employment', label: 'Employment' },
+    // Add more options as needed
+  ];
+
+  const [selectedFilter, setSelectedFilter] = useState('All');
+
+  const handleFilterChange = (value) => {
+    setSelectedFilter(value);
+    // Implement your filtering logic here using the selected filter value
+  };
 
   const lowercaseSearchValue = searchValue.toLowerCase();
 
   // Filtered data based on search value and filter type
   const filteredData = data.filter(item => {
     const companyNameMatches = item.companyName.toLowerCase().includes(lowercaseSearchValue);
-    const typeMatches = filterType === 'All' || (filterType === 'Education' && item.education) || (filterType === 'Employment' && !item.education);
+    const typeMatches = selectedFilter === 'All' || (selectedFilter === 'Education' && item.education) || (selectedFilter === 'Employment' && !item.education);
     return companyNameMatches && typeMatches;
   });
 
-  const isFiltered = lowercaseSearchValue !== '' || filterType !== 'All';
+  const isFiltered = lowercaseSearchValue !== '' || selectedFilter !== 'All';
 
   return (
     <Page title={title}>
@@ -30,15 +44,7 @@ function Resume({ title }) {
           onChange={e => setSearchValue(e.target.value)}
         />
         <label htmlFor="filter-type">Filter by:</label>
-        <select
-          id="filter-type"
-          value={filterType}
-          onChange={e => setFilterType(e.target.value)}
-        >
-          <option value="All">All</option>
-          <option value="Education">Education</option>
-          <option value="Employment">Employment</option>
-        </select>
+        <FilterComponent options={filterOptions} onChange={handleFilterChange} />
       </div>
       <div>
         <button onClick={() => window.open(myPdfFile, '_blank')}>Open PDF</button>
