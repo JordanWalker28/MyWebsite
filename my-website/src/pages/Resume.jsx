@@ -27,7 +27,9 @@ function Resume({ title }) {
   // Filtered data based on search value and filter type
   const filteredData = data.filter(item => {
     const companyNameMatches = item.companyName.toLowerCase().includes(lowercaseSearchValue);
-    const typeMatches = selectedFilter === 'All' || (selectedFilter === 'Education' && item.education) || (selectedFilter === 'Employment' && !item.education);
+    const typeMatches = selectedFilter === 'All' 
+      || (selectedFilter === 'Education' && item.education) 
+      || (selectedFilter === 'Employment' && !item.education);
     return companyNameMatches && typeMatches;
   });
 
