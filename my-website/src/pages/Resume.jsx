@@ -4,9 +4,11 @@ import TimelineItem from '../components/TimelineItem';
 import data from '../json/WorkHistory.json';
 import myPdfFile from '../pdfs/jordan_walker_cv.pdf';
 import Dropdown from '../components/Dropdown'
+import SearchInput from '../components/SearchInput'
 
 function Resume({ title }) {
   const [searchValue, setSearchValue] = useState('');
+  const [selectedFilter, setSelectedFilter] = useState('All');
 
   const filterOptions = [
     { value: 'All', label: 'All' },
@@ -15,16 +17,8 @@ function Resume({ title }) {
     // Add more options as needed
   ];
 
-  const [selectedFilter, setSelectedFilter] = useState('All');
-
-  const handleFilterChange = (value) => {
-    setSelectedFilter(value);
-    // Implement your filtering logic here using the selected filter value
-  };
-
   const lowercaseSearchValue = searchValue.toLowerCase();
 
-  // Filtered data based on search value and filter type
   const filteredData = data.filter(item => {
     const companyNameMatches = item.companyName.toLowerCase().includes(lowercaseSearchValue);
     const typeMatches = selectedFilter === 'All' 
@@ -39,14 +33,9 @@ function Resume({ title }) {
     <Page title={title}>
       <div id="filters">
         <label htmlFor="search-input">Search:</label>
-        <input
-          type="text"
-          id="search-input"
-          value={searchValue}
-          onChange={e => setSearchValue(e.target.value)}
-        />
+        <SearchInput searchValue={searchValue} setSearchValue={setSearchValue} />
         <label htmlFor="filter-type">Filter by:</label>
-        <Dropdown options={filterOptions} onChange={handleFilterChange} />
+        <Dropdown options={filterOptions} onChange={(value) => setSelectedFilter(value)} value={selectedFilter}/>      
       </div>
       <div>
         <button onClick={() => window.open(myPdfFile, '_blank')}>Open PDF</button>

@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function Dropdown({ options, onChange }) {
-  const [filterType, setFilterType] = useState('All');
-
+function Dropdown({ options, onChange, value }) {
   const handleFilterChange = (e) => {
     const selectedValue = e.target.value;
-    setFilterType(selectedValue);
     onChange(selectedValue);
   };
 
   return (
-    <select id="filter-type" value={filterType} onChange={handleFilterChange}>
+    <select id="filter-type" value={value} onChange={handleFilterChange}>
       {options.map((option) => (
         <option key={option.value} value={option.value}>
           {option.label}
