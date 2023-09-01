@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function FilterComponent({ options, onChange }) {
+function Dropdown({ options, onChange }) {
   const [filterType, setFilterType] = useState('All');
 
   const handleFilterChange = (e) => {
@@ -20,4 +20,4 @@ function FilterComponent({ options, onChange }) {
   );
 }
 
-export default FilterComponent;
+export default Dropdown;

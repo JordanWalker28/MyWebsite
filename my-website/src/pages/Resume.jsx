@@ -3,7 +3,7 @@ import Page from '../components/Page';
 import TimelineItem from '../components/TimelineItem';
 import data from '../json/WorkHistory.json';
 import myPdfFile from '../pdfs/jordan_walker_cv.pdf';
-import FilterComponent from '../components/FilterComponent'
+import Dropdown from '../components/Dropdown'
 
 function Resume({ title }) {
   const [searchValue, setSearchValue] = useState('');
@@ -46,7 +46,7 @@ function Resume({ title }) {
           onChange={e => setSearchValue(e.target.value)}
         />
         <label htmlFor="filter-type">Filter by:</label>
-        <FilterComponent options={filterOptions} onChange={handleFilterChange} />
+        <Dropdown options={filterOptions} onChange={handleFilterChange} />
       </div>
       <div>
         <button onClick={() => window.open(myPdfFile, '_blank')}>Open PDF</button>
