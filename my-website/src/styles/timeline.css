@@ -24,13 +24,6 @@
     border-radius: 5px;
   }
 
-  .business-card{
-    width:550px;
-    max-width:100%;	
-    border-radius:4px;	
-    margin:0 auto;
-  }
-
   img{
     max-width:100%;
   }
@@ -42,6 +35,10 @@
   }
   
   .business-card{
+    width:550px;
+    max-width:100%;	
+    border-radius:4px;	
+    margin:0 auto;
     display:flex;
     flex-direction:column;	
     background: linear-gradient(135deg, #fff 0%,#fff 50%,rgba(0,200,200,.4) 50.5%,rgba(0,200,200, .6) 100%); 
@@ -51,6 +48,7 @@
     .profile{
       display:flex;
       flex-basis:150px;
+      flex-direction: column; /* Stack children vertically */
       width:100%;
       padding:15px;		
       .profile-image{
@@ -71,4 +69,11 @@
       }
     }
   }
-  
+
+
+  .accordion-content {
+    /* New styles for the content inside the accordion */
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
