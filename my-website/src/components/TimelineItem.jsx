@@ -9,9 +9,9 @@ function TimelineItem({ item }) {
           <img src={process.env.PUBLIC_URL + '/' + item.companyLogo} alt={item.companyName} />
           </div>
 					<div class="profile-title">
-						<h3>{item.companyName}</h3>
-						<h4>{`${item.startDate} - ${item.endDate}`}</h4>
-						<span><a href={item.websiteUrl}>{item.companyName}</a></span>
+          <h3>{item.education ? 'education' : 'professional'} - {item.companyName}</h3>						
+          <h4>{`${item.startDate} - ${item.endDate}`}</h4>
+					<span><a href={item.websiteUrl}>{item.companyName}</a></span>
 					</div>
 				</div>		
 			</div>
