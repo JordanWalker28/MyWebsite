@@ -5,6 +5,7 @@ import data from '../json/WorkHistory.json';
 import myPdfFile from '../pdfs/jordan_walker_cv.pdf';
 import Dropdown from '../components/Dropdown'
 import SearchInput from '../components/SearchInput'
+import '../styles/timeline.css'; 
 
 function Resume({ title }) {
   const [searchValue, setSearchValue] = useState('');
@@ -46,7 +47,7 @@ function Resume({ title }) {
             <TimelineItem
               key={index}
               item={item}
-              className={`timeline-item ${isFiltered ? 'slide-in' : 'slide-out'}`}
+              className={`container ${isFiltered ? 'slide-in' : 'slide-out'}`}
             />
           ))
         ) : (
