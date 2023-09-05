@@ -48,34 +48,6 @@ body {
   }
 }
 
-a:link,
-a:visited {
-    color: #000; /* Set the color you want here */
-}
-
-/* Hover effect - optional */
-a:hover {
-    color: #00f; /* Set the color for hover effect */
-}
-
-a {
-  position: relative;
-  display: block;
-  padding: 16px 0;
-  margin: 0 12px;
-  letter-spacing: 1px;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-a::before {
-}
-
-a:hover::before {
-}
-
 ul {
   list-style-type: none;
   margin: 0;
