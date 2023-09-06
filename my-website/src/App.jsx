@@ -16,9 +16,17 @@ import Projects from './pages/Projects';
 import ProjectsList from './pages/ProjectsList';
 
 function App() {
+  const navLinks = [
+    { to: '/projects', label: 'Projects' },
+    { to: '/posts', label: 'Posts' },
+    { to: '/resume', label: 'Resume' },
+    { to: '/about', label: 'About' },
+    { to: '/contact', label: 'Contact' },
+  ];
+
   return (
     <Router>
-      <Navbar></Navbar>
+      <Navbar links={navLinks} />
       <Routes>
         <Route path="/" element={<Home title="Hello"/>} />
         <Route path="/resume" element={<Resume title="Resume"/>} />

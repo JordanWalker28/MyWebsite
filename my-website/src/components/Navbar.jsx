@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/navbar.css';
 
-export default function Navbar() {
+export default function Navbar({ links }) {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   const toggleMenu = () => {
@@ -23,38 +23,20 @@ export default function Navbar() {
         >
           <path
             fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            d="M3 5a1 1 0 011-1h12 a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12 a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6 a1 1 0 110 2h-6a1 1 0 01-1-1z"
             clipRule="evenodd"
           />
         </svg>
       </button>
       <div className={`navigation-menu ${isNavExpanded ? 'expanded' : ''}`}>
         <ul>
-          <li>
-            <NavLink to="/projects" onClick={toggleMenu}>
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/posts" onClick={toggleMenu}>
-              Posts
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/resume" onClick={toggleMenu}>
-              Resume
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" onClick={toggleMenu}>
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" onClick={toggleMenu}>
-              Contact
-            </NavLink>
-          </li>
+          {links.map((link, index) => (
+            <li key={index}>
+              <NavLink to={link.to} onClick={toggleMenu}>
+                {link.label}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
