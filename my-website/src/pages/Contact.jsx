@@ -14,7 +14,7 @@ function Contact({ title }) {
         <div className="grid-container">
           {socialLinks.map((link, index) => (
             <a key={index} href={link.URL}>
-              <SocialIcon url={link.Social} />
+              <SocialIcon url={link.Social} href={link.URL}/>
             </a>
           ))}
         </div>
