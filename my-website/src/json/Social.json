@@ -2,21 +2,25 @@
     {
         "Name": "Github",
         "Image": "project1.jpg",
+        "Social": "www.github.com",
         "URL": "https://example.com/project1"
     },
     {
         "Name": "Twitter",
         "Image": "project2.jpg",
+        "Social": "www.x.com",
         "URL": "https://example.com/project2"
     },
     {
         "Name": "Gmail",
         "Image": "project3.jpg",
+        "Social": "www.google.com",
         "URL": "https://example.com/project3"
     },
     {
         "Name": "LinkedIn",
         "Image": "project3.jpg",
+        "Social": "www.linkedin.com",
         "URL": "https://example.com/project3"
     }
 ]

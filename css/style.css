@@ -231,9 +231,13 @@ a {
     font-size: 1.1rem;
 }
 
-.band101:hover {
+/* .band101:hover {
     text-decoration: underline;
     color: purple;
+} */
+
+a {
+  text-decoration: none;
 }
 
 

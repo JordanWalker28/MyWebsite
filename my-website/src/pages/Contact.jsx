@@ -2,6 +2,8 @@ import React from 'react';
 import Page from '../components/Page';
 import '../styles/contact.css';
 import socialLinksData from '../json/Social.json';
+import { SocialIcon } from 'react-social-icons'
+
 
 function Contact({ title }) {
   const socialLinks = socialLinksData;
@@ -12,7 +14,7 @@ function Contact({ title }) {
         <div className="grid-container">
           {socialLinks.map((link, index) => (
             <a key={index} href={link.URL}>
-              <img src={link.Image} alt={link.Name}></img>
+              <SocialIcon url={link.Social} />
             </a>
           ))}
         </div>

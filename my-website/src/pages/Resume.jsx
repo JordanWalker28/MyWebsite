@@ -15,7 +15,6 @@ function Resume({ title }) {
     { value: 'All', label: 'All' },
     { value: 'Education', label: 'Education' },
     { value: 'Employment', label: 'Employment' },
-    // Add more options as needed
   ];
 
   const lowercaseSearchValue = searchValue.toLowerCase();

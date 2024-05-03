@@ -133,9 +133,9 @@ h1 {
 	text-decoration: none;
 }
 
-.timeline-content a:hover {
+/* .timeline-content a:hover {
 	text-decoration: underline;
-}
+} */
 
 /* Responsive */
 @media (max-width: 767px) {
