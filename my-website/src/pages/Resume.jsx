@@ -6,6 +6,7 @@ import myPdfFile from '../pdfs/jordan_walker_cv.pdf';
 import Dropdown from '../components/Dropdown'
 import SearchInput from '../components/SearchInput'
 import '../styles/timeline.css'; 
+import Button from '@mui/material/Button';
 
 function Resume({ title }) {
   const [searchValue, setSearchValue] = useState('');
@@ -39,6 +40,7 @@ function Resume({ title }) {
       </div>
       <div>
         <button onClick={() => window.open(myPdfFile, '_blank')}>Open PDF</button>
+        <Button variant="contained">Hello world</Button>;
       </div>
       <div className={`timeline ${isFiltered ? 'filtered' : ''}`}>
         {filteredData.length > 0 ? (
