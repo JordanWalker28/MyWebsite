@@ -17,8 +17,8 @@ import ProjectsList from './pages/ProjectsList';
 
 function App() {
   const navLinks = [
-    { to: '/projects', label: 'Projects' },
-    { to: '/posts', label: 'Posts' },
+    //{ to: '/projects', label: 'Projects' },
+    //{ to: '/posts', label: 'Posts' },
     { to: '/resume', label: 'Resume' },
     { to: '/about', label: 'About' },
     { to: '/contact', label: 'Contact' },

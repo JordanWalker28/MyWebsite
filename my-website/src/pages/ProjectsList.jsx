@@ -5,6 +5,7 @@ import Projects from '../json/Projects.json'; // Adjust the path to the JSON fil
 function ProjectsList() {
   return (
     <div>
+      <h2 className="page-title">Projects</h2>
       <ul>
         {Projects.map((project, index) => (
           <li key={index}>

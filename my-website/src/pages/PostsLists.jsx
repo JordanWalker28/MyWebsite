@@ -5,6 +5,7 @@ function PostsLists() {
   return (
     <div>
       <ul>
+        <h2 className="page-title">Posts</h2>
         {Object.entries(BlogPosts).map(([slug, { title }]) => (
           <li key={slug}>
             <Link to={`/posts/${slug}`}>
