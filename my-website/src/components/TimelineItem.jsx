@@ -19,8 +19,8 @@ function TimelineItem({ item }) {
           <h4>{`${item.startDate} - ${item.endDate}`}</h4>
           <span><a href={item.websiteUrl}>{item.companyName}</a></span>
         </div>
-        <details open={isOpen}>
-          <summary onClick={toggleAccordion}>Show More</summary>
+        <details open={isOpen} onClick={toggleAccordion}>
+          <summary >Show More</summary>
           <div className="accordion-content">
             <p>{item.description}</p>
           </div>
