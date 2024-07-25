@@ -4,7 +4,6 @@ import {
   Route } from 'react-router-dom';
   import Navbar from './components/Navbar';
 import Home from "./pages/Home"
-import About from "./pages/About"
 import Resume from "./pages/Resume"
 import NotFound from './pages/NotFound';
 import Contact from './pages/Contact';
@@ -20,7 +19,6 @@ function App() {
     //{ to: '/projects', label: 'Projects' },
     //{ to: '/posts', label: 'Posts' },
     { to: '/resume', label: 'Resume' },
-    { to: '/about', label: 'About' },
     { to: '/contact', label: 'Contact' },
   ];
 
@@ -34,7 +32,6 @@ function App() {
           <Route index element={<PostsLists />} />
           <Route path=":slug" element={<Post />} />
         </Route>
-        <Route path="/about" element={<About title="About"/>} />
         <Route path="/contact" element={<Contact title="Contact"/>} />
         <Route path="/projects" element={<Projects title="Projects"/>}>
           <Route index element={<ProjectsList />} />
