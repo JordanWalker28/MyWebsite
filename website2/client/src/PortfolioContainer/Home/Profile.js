@@ -1,20 +1,14 @@
 import React from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { useState, useEffect } from "react";
+import { useTypewriter } from "react-simple-typewriter";
+import './Profile.css'
 
 export default function Profile() {
   const [text] = useTypewriter({
-    words: ["better.", "together.", "differently."],
+    words: ["Senior Developer", "C# Enthusiast", "Backend Developer"],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 40,
   });
-
-  const [showCursor, setShowCursor] = useState(true);
-
-  useEffect(() => {
-    setShowCursor(false);
-  }, [text]);
 
   return (
     <div className="profile-container">
@@ -23,19 +17,20 @@ export default function Profile() {
           <div className="colz">
             <div className="colz-icon">
               <a href="#">
-                <i className="fa fa-facebook-square"></i>
+                  
+                <i className="fab fa-facebook-square share"></i>
               </a>
               <a href="#">
-                <i className="fa fa-github-square"></i>
+                <i className="fab fa-linkedin-square share"></i>
               </a>
               <a href="#">
-                <i className="fa fa-linkedin-square"></i>
+                <i className="fab fa-github-square share"></i>
               </a>
               <a href="#">
-                <i className="fa fa-instagram-square"></i>
+                <i className="fab fa-instagram-square share"></i>
               </a>
               <a href="#">
-                <i className="fa fa-google-plus-square"></i>
+                <i className="fab fa-google-square share"></i>
               </a>
             </div>
           </div>
@@ -49,9 +44,8 @@ export default function Profile() {
             <span className="primary-text">
               {" "}
               <h1>
-                <span style={{ fontweigh: "bold", color: "green" }}>
+                <span style={{display: 'inline-block'}}>
                   {text}
-                  {showCursor && <Cursor style={{ width: "1px" }} />}
                 </span>
               </h1>
               <span className="profile-role-tagline">
@@ -62,7 +56,7 @@ export default function Profile() {
           <div className="profile-options">
             <button className="btn primary-btn"> Hire Me! </button>
             <a href="jordan_walker_cv.pdf" download="jordan_walker_cv.pdf">
-              <button className="btn primary-btn"> Resume! </button>
+              <button className="btn highlighted-btn"> Resume! </button>
             </a>
           </div>
         </div>
