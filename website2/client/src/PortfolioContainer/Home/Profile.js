@@ -17,20 +17,16 @@ export default function Profile() {
           <div className="colz">
             <div className="colz-icon">
               <a href="#">
-                  
                 <i className="fab fa-facebook-square share"></i>
               </a>
               <a href="#">
-                <i className="fab fa-linkedin-square share"></i>
+              <i className="fab fa-instagram-square share"></i>
               </a>
               <a href="#">
                 <i className="fab fa-github-square share"></i>
               </a>
               <a href="#">
-                <i className="fab fa-instagram-square share"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-google-square share"></i>
+                <i className="fab fa-linkedin-in share"></i>
               </a>
             </div>
           </div>
