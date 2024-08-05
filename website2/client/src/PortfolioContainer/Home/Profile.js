@@ -4,7 +4,7 @@ import './Profile.css'
 
 export default function Profile() {
   const [text] = useTypewriter({
-    words: ["Senior Developer", "C# Enthusiast", "Backend Developer"],
+    words: ["SENIOR DEVELOPER", "C# ENTHIUSIAST", "BACKEND DEVELOPER"],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 40,
@@ -17,29 +17,30 @@ export default function Profile() {
           <div className="colz">
             <div className="colz-icon">
               <a href="#">
-                <i className="fab fa-facebook-square share"></i>
+                <i className="fab fa-facebook fa-2x share"></i>
               </a>
               <a href="#">
-              <i className="fab fa-instagram-square share"></i>
+              <i className="fab fa-instagram fa-2x share"></i>
               </a>
               <a href="#">
-                <i className="fab fa-github-square share"></i>
+                <i className="fab fa-github fa-2x share"></i>
               </a>
               <a href="#">
-                <i className="fab fa-linkedin-in share"></i>
+                <i className="fab fa-linkedin-in fa-2x share"></i>
               </a>
             </div>
           </div>
           <div className="profile-details-name">
             <span className="primary-text">
               {" "}
-              Hello I'm <span className="highlighted-text">Jordan</span>
+              Hey, I'm <span className="highlighted-text">Jordan</span>
             </span>
           </div>
           <div className="profile-details-role">
             <span className="primary-text">
-              {" "}
+              {" "} <h1>A</h1>
               <h1>
+                
                 <span style={{display: 'inline-block'}}>
                   {text}
                 </span>

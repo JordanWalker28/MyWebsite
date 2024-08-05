@@ -5,6 +5,7 @@
   justify-content: center;
   height: 10%;
   min-height: fit-content;
+  background-image: url(../../assets/Home/bg.jpg);
 }
 
 .profile-parent {
@@ -134,6 +135,9 @@
   }
   .profile-options .profile-details-role {
     text-align: center;
+  }
+  .profile-details-role h1 {
+    font-size: 28px;
   }
 }
 
