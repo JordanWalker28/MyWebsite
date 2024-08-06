@@ -1,6 +1,6 @@
 import React from "react";
 import { useTypewriter } from "react-simple-typewriter";
-import './Profile.css'
+import "./Profile.css";
 
 export default function Profile() {
   const [text] = useTypewriter({
@@ -20,7 +20,7 @@ export default function Profile() {
                 <i className="fab fa-facebook fa-2x share"></i>
               </a>
               <a href="#">
-              <i className="fab fa-instagram fa-2x share"></i>
+                <i className="fab fa-instagram fa-2x share"></i>
               </a>
               <a href="#">
                 <i className="fab fa-github fa-2x share"></i>
@@ -38,12 +38,10 @@ export default function Profile() {
           </div>
           <div className="profile-details-role">
             <span className="primary-text">
-              {" "} <h1>A</h1>
+              {" "}
+              <h1>A</h1>
               <h1>
-                
-                <span style={{display: 'inline-block'}}>
-                  {text}
-                </span>
+                <span style={{ display: "inline-block" }}>{text}</span>
               </h1>
               <span className="profile-role-tagline">
                 Building backend applications with Front End in mind
