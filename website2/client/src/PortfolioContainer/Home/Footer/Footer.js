@@ -7,7 +7,6 @@ export default function Footer() {
       <div className="footer-parent">
         <img
           src={require("../../../assets/Home/shape-bg.png")}
-          alt="no image available"
         />
       </div>
     </div>
