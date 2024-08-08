@@ -16,16 +16,16 @@ export default function Profile() {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="#">
+              <a href="https://github.com/JordanWalker28">
                 <i className="fab fa-facebook fa-2x share"></i>
               </a>
-              <a href="#">
+              <a href="https://github.com/JordanWalker28">
                 <i className="fab fa-instagram fa-2x share"></i>
               </a>
-              <a href="#">
+              <a href="https://github.com/JordanWalker28">
                 <i className="fab fa-github fa-2x share"></i>
               </a>
-              <a href="#">
+              <a href="https://github.com/JordanWalker28">
                 <i className="fab fa-linkedin-in fa-2x share"></i>
               </a>
             </div>
