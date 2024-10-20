@@ -65,8 +65,8 @@
 }
 
 .profile-picture-background {
-  height: 92%;
-  width: 92%;
+  height: 98%;
+  width: 98%;
   background-image: url(../../../assets/Home/profilephoto.jpg);
   background-size: cover;
   border-radius: 50%;
@@ -81,7 +81,7 @@
 
 .colz .colz-icon i {
   color: white;
-  padding: 8px;
+  padding:18px;
   padding-left: 0px;
 }
 
