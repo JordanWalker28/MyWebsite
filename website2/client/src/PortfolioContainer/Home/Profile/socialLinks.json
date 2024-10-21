@@ -1,0 +1,25 @@
+{
+    "links": [
+      {
+        "url": "https://github.com/JordanWalker28",
+        "icon": "fab fa-facebook",
+        "label": "facebook"
+      },
+      {
+        "url": "/",
+        "icon": "fab fa-instagram",
+        "label": "instagram"
+      },
+      {
+        "url": "https://github.com/JordanWalker28",
+        "icon": "fab fa-github",
+        "label": "github"
+      },
+      {
+        "url": "https://github.com/JordanWalker28",
+        "icon": "fab fa-linkedin-in",
+        "label": "linkedin"
+      }
+    ]
+  }
+  

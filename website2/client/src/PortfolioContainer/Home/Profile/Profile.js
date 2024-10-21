@@ -1,6 +1,7 @@
 import React from "react";
 import { useTypewriter } from "react-simple-typewriter";
 import "./Profile.css";
+import SocialMediaLinks from './SocialMediaLinks';
 
 export default function Profile() {
   const [text] = useTypewriter({
@@ -15,20 +16,7 @@ export default function Profile() {
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
-            <div className="colz-icon">
-              <a href="https://github.com/JordanWalker28">
-                <i className="fab fa-facebook fa-2x share"></i>
-              </a>
-              <a href="https://github.com/JordanWalker28">
-                <i className="fab fa-instagram fa-2x share"></i>
-              </a>
-              <a href="https://github.com/JordanWalker28">
-                <i className="fab fa-github fa-2x share"></i>
-              </a>
-              <a href="https://github.com/JordanWalker28">
-                <i className="fab fa-linkedin-in fa-2x share"></i>
-              </a>
-            </div>
+            <SocialMediaLinks />
           </div>
           <div className="profile-details-name">
             <span className="primary-text">
