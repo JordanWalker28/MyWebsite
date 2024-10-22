@@ -50,7 +50,7 @@ export default class ScrollService {
       if (!sceenFromDom) continue;
 
       let fullyVisible = this.isElementInView(sceenFromDom, "complete");
-      let partiallyVisible = this.isElementInView(scrrenFromDom, "partial");
+      let partiallyVisible = this.isElementInView(sceenFromDom, "partial");
 
       if (fullyVisible || partiallyVisible) {
         if (partiallyVisible && !screen.alreadyRendered) {
