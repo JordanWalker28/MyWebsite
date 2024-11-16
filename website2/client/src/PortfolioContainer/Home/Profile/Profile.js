@@ -7,7 +7,7 @@ export default function Profile() {
   const [text] = useTypewriter({
     words: ["SENIOR DEVELOPER", "C# ENTHIUSIAST", "BACKEND DEVELOPER"],
     loop: {},
-    typeSpeed: 100,
+    typeSpeed: 50,
     deleteSpeed: 40,
   });
 
