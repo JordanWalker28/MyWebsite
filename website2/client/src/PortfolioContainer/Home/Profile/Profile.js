@@ -20,14 +20,13 @@ export default function Profile() {
           </div>
           <div className="profile-details-name">
             <span className="primary-text">
-              {" "}
-              Hey, I'm <span className="highlighted-text">Jordan</span>
+            {" "}
+              Hey, I'm <span className="highlighted-text">Jordan</span> a
             </span>
           </div>
           <div className="profile-details-role">
             <span className="primary-text">
               {" "}
-              <h1>A</h1>
               <h1>
                 <span style={{ display: "inline-block" }}>{text}</span>
               </h1>
