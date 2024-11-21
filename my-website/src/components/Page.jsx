@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/page.css';
 
-function Page({ title, children }) {
+function Page({ children }) {
   return (
     <div className="page-container">
       <div className="page-content">
