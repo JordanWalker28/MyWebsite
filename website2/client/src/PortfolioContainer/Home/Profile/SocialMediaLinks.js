@@ -5,7 +5,7 @@ const SocialMediaLinks = () => {
   return (
     <div className="colz-icon">
       {socialLinks.links.map((link, index) => (
-        <a key={index} href={link.url} aria-label={link.label}>
+        <a key={index} target="_blank" rel="noreferrer" href={link.url} aria-label={link.label}>
           <i className={`${link.icon} fa-2x share`}></i>
         </a>
       ))}
