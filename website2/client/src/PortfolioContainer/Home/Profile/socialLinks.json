@@ -1,25 +1,23 @@
 {
-    "links": [
-      {
-        "url": "https://facebook.com/jordan.walker.79677471",
-        "icon": "fab fa-facebook",
-        "label": "facebook"
-      },
-      {
-        "url": "https://www.instagram.com/jordanw_2801",
-        "icon": "fab fa-instagram",
-        "label": "instagram"
-      },
-      {
-        "url": "https://github.com/JordanWalker28",
-        "icon": "fab fa-github",
-        "label": "github"
-      },
-      {
-        "url": "https://www.linkedin.com/in/jordanstuartwalker",
-        "icon": "fab fa-linkedin-in",
-        "label": "linkedin"
-      }
-    ]
-  }
-  
+  "links": [{
+      "url": "https://facebook.com/jordan.walker.79677471",
+      "icon": "fab fa-facebook",
+      "label": "facebook"
+    },
+    {
+      "url": "https://www.instagram.com/jordanw_2801",
+      "icon": "fab fa-instagram",
+      "label": "instagram"
+    },
+    {
+      "url": "https://github.com/JordanWalker28",
+      "icon": "fab fa-github",
+      "label": "github"
+    },
+    {
+      "url": "https://www.linkedin.com/in/jordanstuartwalker",
+      "icon": "fab fa-linkedin-in",
+      "label": "linkedin"
+    }
+  ]
+}
