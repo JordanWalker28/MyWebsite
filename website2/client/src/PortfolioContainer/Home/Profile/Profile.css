@@ -59,8 +59,8 @@
   justify-content: center;
   box-shadow: 0 1px 0 0px var(--white);
   border-radius: 50%;
-  height: 380px;
-  width: 380px;
+  height: 300px;
+  width: 300px;
   margin: 0 0px 0 100px;
 }
 
@@ -138,8 +138,8 @@
 
 @media screen and (max-width: 375px) {
   .profile-picture {
-    height: 275px;
-    width: 275px;
+    height: 200px;
+    width: 200px;
     margin-top: -90px;
   }
   .profile-details {

@@ -1,7 +1,7 @@
 .header-container {
     display: flex;
     justify-content: center;
-    height: 149px;
+    height: 79px;
     color: var(--white);
   }
   .header-parent {
@@ -13,6 +13,7 @@
     color: var(--white);
   }
   .header-logo {
+    visibility: hidden;
     font-size: 50px;
     font-family: "Poppins SemiBold";
     color: var(--white);
