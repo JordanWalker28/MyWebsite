@@ -1,5 +1,5 @@
 import React from "react";
-import socialLinks from "./socialLinks.json"; // Import the JSON file
+import socialLinks from "../Json/socialLinks.json"; // Import the JSON file
 
 const SocialMediaLinks = () => {
   return (
