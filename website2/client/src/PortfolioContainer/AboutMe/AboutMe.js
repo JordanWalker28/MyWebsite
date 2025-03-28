@@ -1,18 +1,18 @@
 import {React} from "react";
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading'
-// import ScrollService from '../../utilities/ScrollService'
-// import Animations from '../../utilities/Animations'
+import ScrollService from '../../utilities/ScrollService'
+import Animations from '../../utilities/Animations'
 import "./AboutMe.css";
 
 export default function AboutMe(props) {
 
-  // let fadeInScreenHandler = (screen) => {
-  //   if(screen.fadeInScreenHandler !== props.id) return;
-  //   Animations.animations.fadeInScreen(props.id);
-  // };
+  let fadeInScreenHandler = (screen) => {
+    if (screen.fadeInScreen !== props.id) return;
 
-  // const fadeInSubscription =
-  //   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+    Animations.animations.fadeInScreen(props.id);
+  };
+  const fadeInSubscription =
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTSANTS = {
     description: "Blah blah",
