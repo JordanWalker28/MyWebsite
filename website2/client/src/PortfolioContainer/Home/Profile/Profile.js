@@ -5,7 +5,7 @@ import SocialMediaLinks from './SocialMediaLinks';
 
 export default function Profile() {
   const [text] = useTypewriter({
-    words: ["SENIOR DEVELOPER", "C# ENTHIUSIAST", "BACKEND DEVELOPER"],
+    words: ["SENIOR DEVELOPER", "C# ENTHIUSIAST", "BACKEND MANAGER"],
     loop: {},
     typeSpeed: 50,
     deleteSpeed: 40,
