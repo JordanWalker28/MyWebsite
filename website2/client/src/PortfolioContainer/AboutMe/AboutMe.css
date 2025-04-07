@@ -15,8 +15,8 @@
     box-shadow: 0 0px 20px -2px #1f2235;
   }
   .about-me-profile {
-    width: 50%;
-    background-image: url("../../assets/Home/profilephoto.jpg");
+    width: 30%;
+    background-image: url("../../assets/Home/me.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
