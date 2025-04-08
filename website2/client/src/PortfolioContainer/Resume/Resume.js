@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
+import workIcon from '../../assets/Resume/work-history.svg';
+import educationIcon from '../../assets/Resume/education.svg';
+import interestsIcon from '../../assets/Resume/interests.svg';
 import "./Resume.css";
 
 const Resume = (props) => {
-  /* STATES */
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
@@ -17,7 +19,6 @@ const Resume = (props) => {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-  /* REUSABLE MINOR COMPONENTS */
   const ResumeHeading = (props) => {
     return (
       <div className="resume-heading">
@@ -44,76 +45,12 @@ const Resume = (props) => {
 
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
-    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
-    { label: "Interests", logoSrc: "interests.svg" },
-  ];
-
-  //here we have
-  const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
-    { skill: "Mongo Db", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
-  ];
-
-  const projectsDetails = [
-    {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
-    },
-    {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "An ecommerce application designed to sell products online wth payment system integration",
-      subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
-    },
-    {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
-      subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
-    },
+    { label: "Work", logoSrc: workIcon },
+    { label: "Education", logoSrc: educationIcon },
+    { label: "Interests", logoSrc: interestsIcon}
   ];
 
   const resumeDetails = [
-    <div className="resume-screen-container" key="education">
-      <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
-      />
-
-      <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
-      />
-      <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
-      />
-    </div>,
-
-    /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
@@ -148,40 +85,47 @@ const Resume = (props) => {
       </div>
     </div>,
 
-    /* PROGRAMMING SKILLS */
-    <div
-      className="resume-screen-container programming-skills-container"
-      key="programming-skills"
-    >
-      {programmingSkillsDetails.map((skill, index) => (
-        <div className="skill-parent" key={index}>
-          <div className="heading-bullet"></div>
-          <span>{skill.skill}</span>
-          <div className="skill-percentage">
-            <div
-              style={{ width: skill.ratingPercentage + "%" }}
-              className="active-percentage-bar"
-            ></div>
-          </div>
-        </div>
-      ))}
-    </div>,
+<div className="resume-screen-container" key="education">
+<ResumeHeading
+  heading={"University of Legon Accra, Ghana"}
+  subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
+  fromDate={"2014"}
+  toDate={"2018"}
+/>
 
-    /* PROJECTS */
-    <div className="resume-screen-container" key="projects">
-      {projectsDetails.map((projectsDetails, index) => (
-        <ResumeHeading
-          key={index}
-          heading={projectsDetails.title}
-          subHeading={projectsDetails.subHeading}
-          description={projectsDetails.description}
-          fromDate={projectsDetails.duration.fromDate}
-          toDate={projectsDetails.duration.toDate}
-        />
-      ))}
-    </div>,
+<ResumeHeading
+  heading={"National Youth Service Corps"}
+  subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
+  fromDate={"2019"}
+  toDate={"2020"}
+/>
+<ResumeHeading
+  heading={"High School "}
+  subHeading={"Command Secondary School Mbiri"}
+  fromDate={"2007"}
+  toDate={"2012"}
+/>
+<ResumeHeading
+  heading={"High School "}
+  subHeading={"Command Secondary School Mbiri"}
+  fromDate={"2007"}
+  toDate={"2012"}
+/>
+<ResumeHeading
+  heading={"High School "}
+  subHeading={"Command Secondary School Mbiri"}
+  fromDate={"2007"}
+  toDate={"2012"}
+/>
+<ResumeHeading
+  heading={"High School "}
+  subHeading={"Command Secondary School Mbiri"}
+  fromDate={"2007"}
+  toDate={"2012"}
+/>
 
-    /* Interests */
+</div>,
+
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
         heading="Teaching"
@@ -220,7 +164,7 @@ const Resume = (props) => {
       >
         <img
           className="bullet-logo"
-          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
+          src={bullet.logoSrc}
           alt="B"
         />
         <span className="bullet-label">{bullet.label}</span>
@@ -252,7 +196,7 @@ const Resume = (props) => {
       id={props.id || ""}
     >
       <div className="resume-content">
-        <ScreenHeading title={"Resume"} subHeading={"My formal Bio Details"} />
+        <ScreenHeading title={"What I Do"} />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

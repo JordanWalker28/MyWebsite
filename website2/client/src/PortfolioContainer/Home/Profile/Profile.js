@@ -7,8 +7,8 @@ export default function Profile() {
   const [text] = useTypewriter({
     words: ["SENIOR DEVELOPER", "C# ENTHIUSIAST", "BACKEND MANAGER"],
     loop: {},
-    typeSpeed: 50,
-    deleteSpeed: 40,
+    typeSpeed: 60,
+    deleteSpeed:40,
   });
 
   return (
@@ -28,7 +28,7 @@ export default function Profile() {
             <span className="primary-text">
               {" "}
               <h1>
-                <span style={{ display: "inline-block" }}>{text}</span>
+              {" "} <span style={{ display: "inline-block" }}>{text}</span>
               </h1>
               <span className="profile-role-tagline">
                 Building backend applications with Front End in mind
