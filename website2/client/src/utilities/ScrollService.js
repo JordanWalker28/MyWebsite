@@ -16,12 +16,6 @@ export default class ScrollService {
   }
 
   /* SCROLL TO HIRE ME / CONTACT ME SCREEN */
-  scrollToHireMe = () => {
-    let contactMeScreen = document.getElementById("ContactMe");
-    if (!contactMeScreen) return;
-
-    contactMeScreen.scrollIntoView({ behavior: "smooth" });
-  };
   scrollToHome = () => {
     let homeScreen = document.getElementById("Home");
     if (!homeScreen) return;
