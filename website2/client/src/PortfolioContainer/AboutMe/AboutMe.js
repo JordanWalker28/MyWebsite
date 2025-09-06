@@ -21,7 +21,6 @@ export default function AboutMe(props) {
         "💡 Problem Solver: Whether it’s a tricky bug or a complex feature, I’m all about finding the best solution.",
         "🚀 Performance Geek: Optimizing code and improving app speed is my jam.",
         "🧑‍🤝‍🧑 Team Player: Collaboration is key – I love working with others to make projects shine.",
-        "☕ Coffee Aficionado: Always on the lookout for the best coffee spots in London. Fuel for coding!",
         "🎮 Tech Enthusiast: When I'm not coding, I’m diving into new tech trends or playing around with side projects.",
         "🌍 London Explorer: Exploring the city’s hidden gems when I’m not deep in code."
       ],
